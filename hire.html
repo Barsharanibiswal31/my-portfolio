@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>#contact{
+        background-color: #f9f9f9;
+        padding: 50px 0;
+        text-align: center;
+      }
+      #contact h2{
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+      #contact p{
+        font-size: 18px;
+        margin-bottom: 20px;
+        color:#333
+      }
+      .contact-card{
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        border-radius: 10px;
+      }
+      .group-form{
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .group-form label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color:#333
+      }
+      .group-form input,
+      .group-form text area{
+      width: 96%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      font-size: 16px;
+      }
+      .group-form textarea{
+        height:150px;
+            resize: none;}
+        </style>
+</head>
+<body>
+    <section id="contact">
+        <h2>Hire Me</h2>
+        <p>If You have any querry, fell free to reach out to me by filling the from below</p>
+        <div class="contact-card">
+            <form id="form">
+                <div class="group-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Your Name"/>
+                </div>
+                <div class="group-form">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="Email" placeholder="abc@gmail.com"/>
+                </div>
+                
+                <div class="group-form">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="your message">
+                </div>
+
+                <button class="btn-message" type="submit" id="button">Send Message</button>
+            </form>
+
+        </div>
+  
+    <script src="contact.js"></script> 
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('3dtz-QUrYVx8jgIAw')
+</script>
+    
+</section> 
+    
+</body>
+</html>
