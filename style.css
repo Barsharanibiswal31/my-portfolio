@@ -50,16 +50,58 @@ nav {
 .nav-link a:hover{
   color: #ff6347;
 }
-#profile{
-  background: radial-gradient(circle, rgba(255,161,202,1) 0%, rgba(100,203,231,1) 100%);
-  height: 100vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
+#profile {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video */
+#bgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Gradient overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  
+
+    z-index: -1;
+}
+
+/* Content */
+.profile-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profile-content img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: #ff4d5a;
+    color: white;
+    cursor: pointer;
 }
 .profile-content img{
   height: 350px;
@@ -224,16 +266,7 @@ background-color: #f9f9f9;
 
   #blog-section {
     padding: 50px 0;
-    background-color: #f4f4f9;
-    text-align: center;
   }
-  
-  #blog-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
   .scroll-container {
     display: flex;
     gap: 20px;
@@ -244,6 +277,19 @@ background-color: #f9f9f9;
     scrollbar-color: #ff5733 transparent;
   }
   
+  .scroll-container{
+     background-color: #f4f4f9;
+    text-align: center;
+  }
+  
+  #blog-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+ 
   .scroll-container::-webkit-scrollbar {
     height: 8px;
   }

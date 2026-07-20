@@ -1,0 +1,23 @@
+# Image files
+*.jpg
+*.jpeg
+*.png
+
+
+# Video files
+*.mp4
+
+
+
+# Documents (optional)
+*.pdf
+
+
+# Ignore specific folders
+photos/
+images/
+videos/
+media/
+uploads/
+assets/images/
+assets/videos/
